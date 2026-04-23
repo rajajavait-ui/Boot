@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="container-fluid p-4">
+    <h1>Model</h1>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Login">Login</button>
+    <div class="modal fade" id="Login">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="bi bi-person-circle">Enter Login details</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal" ></button>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                    <dt>Password</dt>
+                    <dd> <input type="password" class="form-control"></dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning">Login</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#OTPLogin">Login With OTP</button>
+    <div class="modal fade" id="OTPLogin">
+      <div class="modal-dialog modal-fullscreen ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="bi bi-person-circle">Enter Login details</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal" ></button>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                    <dt>Enter OTP</dt>
+                    <dd> <input type="password" class="form-control"></dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning">Login</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forget">Forgot Password</button>
+    <div class="modal fade" id="forget">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="bi bi-person-circle">Reset Password</h1>
+                <button class="btn btn-close" data-bs-dismiss="modal" ></button>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                    <dt>Phone</dt>
+                    <dd> <input type="password" class="form-control"></dd>
+                     <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                     <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                     <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                     <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                     <dt>Enter Email</dt>
+                    <dd><input type="text" class="form-control"></dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning">Send OTP</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Ads">Ads</button>
+    <div class="modal" id="Ads">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="text-bg-warning text-black spinner-grow">50%</div>
+            <h1>Limited Period Only </h1>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../public/images/books.jpg" alt="books" class="w-50 h-50 text-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

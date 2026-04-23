@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body
+        {
+            background-size: cover;
+            color: white;
+        }
+        .shade-cover
+        {
+            height: 100vh;
+            background-color: rgba(0,0,0,0.6);
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 101.30%;
+        }
+        header
+        {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+            align-items: center;
+            
+        }
+        .Brand
+        {
+            color: red;
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 50px;
+            padding-left: 20px;
+            align-items: center;
+        }
+        .nav-but
+        {
+            display: flex;
+            flex-direction: row;
+            padding-left:10px ;
+            align-items: center;
+
+        }
+        .tr
+        {
+            padding: 10px;
+            border:1px solid gray;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 5px;
+            
+
+        }
+        .button
+        {
+            padding: 10px;
+            background-color: red;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        section
+        {
+            color: white;
+            text-align: center;
+            padding-top: 200px ;
+        }
+        .title-1
+        {
+            font-size: 50px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .title-2
+        {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .main
+        {
+            padding-top:30px ;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+        .email
+        {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            width: 250px;
+            border:2px solid grey;
+            color:rgb(226, 226, 226);
+            text-align: left;
+            border-radius: 3px;
+        }
+        .but
+        {
+            background-color: red;
+            margin-left: 10px;
+            border-radius: 3px;
+            padding: 20px;
+            text-align: center;
+        }
+        footer
+        {
+            display: grid;
+            flex-direction: row;
+            padding-left: 10px;
+            background-color: black;
+            padding-top: 20px;
+            padding-left: 20px;
+            color: rgb(174, 174, 174);
+        }
+        .f1
+        {
+            display: flex;
+            flex-direction: row;
+            font-family: Arial;
+        }
+        .f2
+        {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin: 90px;
+        }
+        .c1{
+            display: flex;
+            flex-direction: column;
+            font-style:initial;
+            text-decoration: underline;
+            
+        }
+        .c1 span
+        {
+            padding-top:10px ;
+        }
+        .f3
+        {
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        .f3 span
+        {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body background="./images/netflix_banner.jpg">
+    <div class="shade-cover">
+        <header>
+            <div  class="Brand">
+                <Span >NETFLIX</Span>
+            </div>
+            <div class="nav-but">
+                <div class="tr">
+                    <span class="bi bi-translate">English</span>
+                </div>
+                <div>
+                    <span class="button">Sign in</span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="title-1">
+                    Unlimited movies, <br>shows, and more
+                </div>
+                <div class="title-2">
+                    Starts at ₹149. Cancel at any time.
+                </div>
+            <main class="mad">
+                <div>
+                     Ready to watch? Enter your email to create or restart your membership.
+                </div>
+                <div class="main">
+                    <div class="email">
+                        <span >Email Address</span>
+                    </div>
+                    <div class="but">
+                         GET Started <span class="bi bi-chevron-compact-right"></span>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <footer>
+            <div class="f1">
+                <address>
+                    Questions? Call 000-800-919-1743
+                </address>
+            </div>
+            <div class="f2">
+                <div class="c1">
+                    <Span>FAQ</Span>
+                    <span>Investor Relations</span>
+                    <span>Privacy</span>
+                    <span>SpeedTest</span>
+                </div>
+                <div class="c1">
+                    <span>Account</span>
+                    <span>WAY to Watch</span>
+                    <span>Corporate Information</span>
+                    <span>Only on NetFlix</span>
+                </div>
+                <div class="c1">
+                    <span>Help Centre</span>
+                    <span>Job</span>
+                    <span>Cookies Preference</span>
+                    <span>Legal Notice</span>
+                </div>
+                <div class="c1">
+                    <span>Media Center</span>
+                    <span>Contact  Us</span>
+                    <span>Terms of Use</span>
+                </div>
+            </div>
+            <div class="f3">
+                <span class="bi bi-translate">English</span>
+                <span>Netflix India</span>
+                <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: rgb(234, 234, 234);
+            font-family: Arial;
+        }
+
+        header {
+            padding: 10px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header span {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .bi-bug,
+        .bi-play,
+        .bi-cloud-arrow-up,
+        .bi-sticky,
+        .bi-stars {
+            background-color: rgb(203, 202, 202);
+            padding: 5px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 20px;
+            margin-top: 10px;
+        }
+
+        .sect-1,
+        .sect-2 {
+            background-color: white;
+            height: 600px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .sect-1-head {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .sect-1-head span {
+
+            padding: 3px;
+            border-left: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-1">
+            <span class="bi bi-javascript"></span>
+            <span>30 days of Java Script</span>
+            <span class="bi bi-chevron-left"></span>
+            <span class="bi bi-chevron-right"></span>
+            <span class="bi bi-shuffle"></span>
+        </div>
+        <div class="head-2">
+            <span class="bi bi-bug"></span>
+            <span class="bi bi-play"></span>
+            <span class="bi bi-cloud-arrow-up">Submit</span>
+            <span class="bi bi-sticky"></span>
+            <span class="bi bi-stars"></span>
+        </div>
+        <div class="head-3">
+            <span class="bi bi-layout-sidebar-inset"></span>
+            <span class="bi bi-gear-fill"></span>
+            <span class="bi bi-stopwatch"></span>
+            <span>Register</span>
+            <span>or</span>
+            <span>Login</span>
+            <span>Premium</span>
+        </div>
+    </header>
+    <section>
+        <div class="sect-1">
+            <div role="heading" class="sect-1-head">
+                <span class="bi bi-file-text">Description</span>
+                <span class="bi bi-book">Editoral</span>
+                <span class="bi bi-flask">Solution</span>
+                <span class="bi bi-clock-history">Submition</span>
+            </div>
+            <div>
+                <h1>2667. Create Hello World Function</h1>
+                <p>Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+                </p>
+                <p>
+                <h3>Example 1:</h3>
+                <pre>Input: args = []
+Output: "Hello World"
+Explanation: const f = createHelloWorld();
+f(); // "Hello World"
+Any arguments could be passed to the function but it should still always return "Hello World".
+</pre>
+                </p>
+                <p>
+                <h3>Example 2:</h3>
+                <pre>Input: args = []
+Output: "Hello World"
+Explanation: const f = createHelloWorld();
+f(); // "Hello World"
+Any arguments could be passed to the function but it should still always return "Hello World".
+</pre>
+                </p>
+                <p>
+                <h3>Constraints:</h1>
+                    <ul>
+                        <li><code>0 <= args.length <= 10</code></li>
+                    </ul>
+                    </p>
+            </div>
+        </div>
+        <div class="sect-2">
+            <div role="heading" class="sect-2-head">
+                <span class="bi bi-code-slash">Code</span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

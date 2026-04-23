@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+        }
+        form
+        {
+            padding: 30px;
+            border: 1px solid black; 
+            border-radius: 5px;
+            margin-top: 40px;
+            font-family: Arial;
+            font-size: 18px;
+            width: 220px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .form-group
+        {
+            margin-bottom: 20px;
+        }
+        .form-title
+        {
+            font-weight:bold ;
+            padding-bottom: 20px;
+        }
+        .form-control
+        {
+            width: 100%;
+            font-size: 16px;
+            height: 25px;
+        }
+        .form-label
+        {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .btn-register
+        {
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            background-color: gold;
+            border-radius: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-title"><span class="bi bi-person"></span>Create New Account</div>
+        <div class="form-group">
+            <label class="form-label" for="firstname">First Name</label>
+            <div>
+                <input type="text" class="form-control" name="firstname">
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="LastName" class="form-label">Last Name</label>
+                <div>
+                    <input type="text" class="form-control" name="LastName">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="City" class="form-label">Your City</label>
+                <div>
+                    <select name="City" class="form-control">
+                        <option>Select Your City</option>
+                        <option>Hyd</option>
+                        <option>Mumbai</option>
+                        <option>Chenni</option>
+                        <option>VijayaWada</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="Gender" class="form-label"> Gender</label>
+                <div>
+                    <input type="radio" name="gender" value="male"><label class="form-check-label">Male</label>
+                    <input type="radio" name="gender" value="female"><label class="form-check-label">FEmale</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn-register">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

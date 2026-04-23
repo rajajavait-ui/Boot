@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC RANKING Table</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        table
+        {
+            font-family: Arial;
+        }
+        .flag
+        {
+            width: 20px;
+        }
+        .flag+span
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .player-img
+        {
+            width: 150px;
+        }
+        .player-details
+        {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-size: cover;
+        }
+        .col-1
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .col-1 span
+        {
+            display: block;
+        }
+        .player-subtitle
+        {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .player-title
+        {
+            color: gray;
+            font-size: 20px;
+        }
+        caption
+        {
+            padding-bottom: 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        tbody tr:first-child
+        {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .bi-dot
+        {
+            font-size: 30px;
+            color: grey;
+        }
+    </style>
+</head> 
+<body>
+    <table  width="100%" border="1" cellspacing="5" cellpadding="10" frame="void">
+        <caption>ICC MENS- T20 Ranking</caption>
+        <colgroup span="1"></colgroup>
+        <thead>
+            <tr height="50">
+                <th width="50">Pos</th>
+                <th>Team</th>
+                <th width="300">Players</th>
+                <th>Rating</th>
+                <th>Carrier Best Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01 <span class="bi bi-dot"></span></td>
+                <td><img class="flag" src="./images/india.png"><span>IND</span></td>
+                <td class="player-details" background="./images/trophy.jpg">
+                    <div class="col-1">
+                        <div>
+                            <span class="player-title">Abhishek</span>
+                            <span class="player-subtitle">Sharma</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/abishek.png" class="player-img">
+                    </div>
+                </td>
+                <td>913</td>
+                <td>931 v Sri Lanka at Dubai 2025</td>
+            </tr>
+            <tr>
+                <td>02 <span class="bi bi-dot"></span></td>
+                <td><img class="flag" src="./images/England.png"><span>England</span></td>
+                <td class="player-details">
+                    <div class="col-1">
+                        <div>
+                            <span class="player-title">Phil</span>
+                         <span class="player-subtitle">Salt</span>
+                        </div>
+                    </div>
+                </td>
+                <td>849</td>
+                <td>881 v West Indies at Barbados 2024</td>
+            </tr>
+            <tr>
+                <td>03 <span class="bi bi-dot"></span></td>
+                <td><img class="flag" src="./images/SriLanka.png"><span>Sri SriLanka</span></td>
+                <td class="player-details">
+                    <div class="col-1">
+                        <div>
+                            <span class="player-title">Pathum</span> 
+                        <span class="player-subtitle">Nissanka</span>
+                        </div>
+                    </div>
+                </td>
+                <td>779</td>
+                <td>794 v South Africa at Old Trafford 2025</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" align="center">View More</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

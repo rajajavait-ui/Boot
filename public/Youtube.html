@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            font-family: Arial;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .bi-justify {
+            font-size: 20px;
+        }
+        .searchContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .SearchBar {
+            border: 1px solid rgb(215, 215, 215);
+            width: 400px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .bi-mic
+        {
+            background-color: rgb(235, 235, 235);
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 100%;
+            display: inline-block;
+            text-align: center;
+            
+        }
+        .btn-create{
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: rgb(243, 242, 242);
+            margin-right: 20px;
+        }
+        .bi-bell
+        {
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        section
+        {
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            margin-top: 10px;
+        }
+        .nav-menu
+        {
+            list-style: none;
+            margin-left: -50px;
+            font-family: Arial;
+
+        }
+        .nav-items span
+        {   
+            display: block;
+            text-align: center;
+        }
+        .nav-text
+        {
+            font-size: 12px;
+        }
+        .nav-icon
+        {
+            font-size: 25px;
+        }
+        .nav-items
+        {
+            margin-bottom: 40px;
+        }
+        article
+        {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            margin-top: 10px;
+            font-family: Arial;
+            width: 800px;
+        }
+        .article-title
+        {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .article-text
+        {
+            width: 700px;
+            height: 20px;
+            text-overflow: ellipsis;
+            overflow: auto;
+        }
+        .btn-subscribe
+        {
+            margin-top: 30px;
+            background: black;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .nit-banner
+        {
+            border-radius: 20px;
+        }
+        main
+        {
+            height: 500px;
+            overflow: auto;
+        }
+        .nav-tabs
+        {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin-left: -20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+           
+        }
+        .nav-tabs li
+        {
+            font-size: 20px;
+            font-family: Arial;
+            margin-right: 30px;
+            color: gray;
+        }
+        .nav-tabs li:first-child
+        {
+            font-weight: bold;
+            color: black;
+        }
+        .channel-article
+        {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+        }
+        .channel-article iframe{
+            height: 250px;
+            border: none;
+        }
+        .content
+        {
+            margin-left: 20px;
+            text-align: left;
+            font-family: Arial;
+        }
+        .title
+        {
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sub-title
+        {
+            font-size: 15px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        .description
+        {
+            font-size: 15px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 25px;
+        }
+        .videos-row
+        {
+            display: grid;
+            grid-template-columns:  2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .video-card
+        {
+            width: 200px;
+        }
+        .video-card iframe
+        {
+            width: 100%;
+        }
+        .video-body
+        {
+            font-weight: bold;
+            font-size: 12px;
+            font-family: Arial;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .video-foot
+        {
+            font-family: Arial;
+            font-size: 13px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img  width="70%" src="./images/youtubelogo.png">
+        </div>
+        <div class="searchContainer">
+            <div class="SearchBar">
+                <span>Search</span>
+                <span class="bi bi-search"></span> 
+            </div>
+            <div class="bi bi-mic"></div>
+        </div>
+        <div>
+            <span class="btn-create"><span class="bi bi-plus"> Create</span></span>
+            <span class="bi bi-bell"></span>
+            <span class="bi bi-person-circle"></span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-items">
+                    <span class="bi bi-house-door nav-icon"></span>
+                    <span class="nav-text">Home</span>
+                </li>
+                <li class="nav-items">
+                    <span class="bi bi-film nav-icon"></span>
+                    <span class="nav-text">shots</span>
+                </li>
+                <li class="nav-items">
+                    <span class="bi bi-collection-play nav-icon"></span>
+                    <span class="nav-text">Subscription</span>
+                </li>
+                <li class="nav-items">
+                    <span class="bi bi-person-circle nav-icon"></span>
+                    <span class="nav-text">You</span>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <img src="./images/NareshitBanner.jpg" width="90%" class="nit-banner">
+            <article>
+                <div>
+                    <img src="./images/NareshitLogo.jpg" alt="">
+                </div>
+                <div>
+                    <div class="article-title">Naresh i Technologies</div>
+                    <div class="sub-title">@NareshIT 1.33M subscribers 3.8K videos</div>
+                    <p class="article-text">We are one of the software training organization With a library of 200+ courses, we have helped 600,000+ professionals advance their careers in almost every possible phase of academics, interviews, jobs and delivering  improvement in pay raises. </p>
+                    <div>
+                        <a href="https://www.instagram.com/nareshitech">instagram.com/nareshitech</a> and 7 more Links
+                    </div>
+                    <div class="btn-subscribe">subscribers</div>
+                </div>
+            </article>
+            <ul class="nav-tabs">
+                <li>Home</li>
+                <li>Videos</li>
+                <li>Shots</li>
+                <li>live</li>
+                <li>courses</li>
+                <li>Playlist</li>
+                <li>Post</li>
+                <li><span class="bi bi-search"></span></li>
+            </ul>
+            <hr color="gray">
+            <div class="channel-article">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/S91ZhTI0wjg" width="100%"></iframe>
+                </div>
+                <div class="content">
+                    <div class="title">Next Gen Full Stack UI with React & AI | Sudhakar Sharma | Naresh IT</div>
+                    <div class="sub-title"> NareshIT subscribers 1.3k Watching</div>
+                    <div class="description">** For Online Training Registration: https://goo.gl/r6kJbB ► Call: +91-8179191999 Subscribe to our channel and hit the bell 🔔🔔🔔 icon to get video updates. 💡 Visit Our Websites...</div>
+                </div>
+            </div>
+            <hr noshade color="gray">
+            <h3>Videos</h3>
+            <div class="videos-row">
+                <div class="video-card">
+                    <div class="video-head">
+                        <iframe src="https://www.youtube.com/embed/lDGnlRHPbKI"></iframe>
+                    </div>
+                    <div class="video-body">
+                        <span class="card-title">Building AI Agents with Gemini 3 and Google Antigravity | Naresh IT</span>
+                    </div>
+                    <div class="video-foot">
+                        <span>69 Views</span>
+                        <span>10 hours Ago</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-head">
+                        <iframe src="https://www.youtube.com/embed/lDGnlRHPbKI"></iframe>
+                    </div>
+                    <div class="video-body">
+                        <span class="card-title">Building AI Agents with Gemini 3 and Google Antigravity | Naresh IT</span>
+                    </div>
+                    <div class="video-foot">
+                        <span>69 Views</span>
+                        <span>10 hours Ago</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-head">
+                        <iframe src="https://www.youtube.com/embed/lDGnlRHPbKI"></iframe>
+                    </div>
+                    <div class="video-body">
+                        <span class="card-title">Building AI Agents with Gemini 3 and Google Antigravity | Naresh IT</span>
+                    </div>
+                    <div class="video-foot">
+                        <span>69 Views</span>
+                        <span>10 hours Ago</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-head">
+                        <iframe src="https://www.youtube.com/embed/lDGnlRHPbKI"></iframe>
+                    </div>
+                    <div class="video-body">
+                        <span class="card-title">Building AI Agents with Gemini 3 and Google Antigravity | Naresh IT</span>
+                    </div>
+                    <div class="video-foot">
+                        <span>69 Views</span>
+                        <span>10 hours Ago</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-head">
+                        <iframe src="https://www.youtube.com/embed/lDGnlRHPbKI"></iframe>
+                    </div>
+                    <div class="video-body">
+                        <span class="card-title">Building AI Agents with Gemini 3 and Google Antigravity | Naresh IT</span>
+                    </div>
+                    <div class="video-foot">
+                        <span>69 Views</span>
+                        <span>10 hours Ago</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

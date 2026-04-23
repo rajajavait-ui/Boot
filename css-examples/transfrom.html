@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        @keyframes Run
+        {
+            from
+            {
+                transform: translateX(0px);
+            }
+            49%
+            {
+                transform:translateX(1200px) ;
+            }
+            50%
+            {
+                transform: translateX(1200px) rotateY(180deg);
+            }
+            51%
+            {
+                transform:  translateX(1200px )rotateY(180deg);
+            }
+            to
+            {
+                transform: translateX(0px) rotateY(180deg);
+            }
+        }
+        .track{
+            animation-name: Run;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            display: inline-block;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <span class="bi bi-truck track" style="font-size: 40px; color: chocolate;"></span>
+</body>
+</html>

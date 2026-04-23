@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="container-fluid">
+    <header class="border border-1 d-flex m-3 p-2 justify-content-between">
+      <div>
+        <button
+          data-bs-target="#menu"
+          data-bs-toggle="offcanvas"
+          class="btn btn-light bi bi-justify"
+        ></button>
+        <span>Flipkart</span>
+      </div>
+      <div>
+        <button
+          data-bs-target="#cart"
+          data-bs-toggle="offcanvas"
+          class="btn btn-warning bi bi-cart-check-fill"
+        ></button>
+      </div>
+    </header>
+    <div class="offcanvas offcanvas-start" id="menu">
+      <div class="offcanvas-header">
+        <h3>Flipkart</h3>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>Home</li>
+          <li>Mobiles</li>
+          <li>Air Condition</li>
+          <li>Coolers</li>
+        </ul>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="cart">
+      <div class="offcanvas-header">
+        <h3>Our Order</h3>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <header class="border border-1 m-3 p-2 d-flex justify-content-between">
+      <div>
+        <button
+          data-bs-target="#menu-1"
+          data-bs-toggle="offcanvas"
+          class="btn btn-light bi bi-justify"
+        ></button>
+        <span>Amazon</span>
+      </div>
+      <div>
+        <button class="btn btn-warning bi bi-cart-check" data-bs-target="#Items-1" data-bs-toggle="offcanvas"></button>
+      </div>
+    </header>
+    <div class="offcanvas offcanvas-top" id="menu-1">
+      <div class="offcanvas-header">
+        <h3>Amazon Home</h3>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>Home</li>
+          <li>Speakers</li>
+          <li>Mobiles</li>
+          <li>Refrigerators</li>
+          <li>Rolex</li>
+        </ul>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-bottom" id="Items-1">
+      <div class="offcanvas-header">
+        <h3>Cart Items</h3>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+          </table>
+      </div>
+    </div>
+  </body>
+</html>

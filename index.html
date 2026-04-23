@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>FlipKart</title>
+    <style>
+        header
+        {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 2px 2px 2px grey;
+        }
+        .Logo
+        {
+            font-size: 30px;
+            color: blue;
+            font-family: Comic Sans MS;
+            font-weight: bold;
+            font-style: italic;
+             align-items: center;
+        }
+        .SearchBar
+        {
+            width: 500px;
+            background-color: rgb(231, 231, 249);
+            border-radius: 3px;
+            padding: 10px;
+            align-items: center;
+            justify-content: left;
+        }
+        .logo-icons span
+        {
+            padding-left: 20px;
+            padding-right:20px ;
+        }
+        .SearchBar span{
+            padding-left: 10px;
+        }
+        /*Section */
+        section
+        {
+            height: 300px;
+        }
+        article
+        {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            
+        }
+        .bi-lightning-fill
+        {
+            color: gold;
+        }
+        /* footer*/
+        footer
+        {
+            font-family: Arial;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-color: black;
+            color: rgb(246, 245, 245);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        footer span
+        {
+            display: block;
+            padding-bottom: 5px;
+        }
+        .part-1
+        {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            border-right: 2px solid white;
+            margin-left: 20px;
+        }
+        .part-2
+        {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+             margin-left: 20px;
+        }
+        .col-name
+        {
+            font-size: 13px;
+            font-weight: 2px;
+            display: block;
+            color: grey;
+            padding-bottom: 10px;
+        }
+        aside span
+        {
+            flex-direction: row;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .ico
+        {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <span>FlipKart</span>
+        </div>
+        <div class="SearchBar">
+            <span class="bi bi-search"></span> <span>Search for products,brands and More</span>
+        </div>
+        <div class="logo-icons">
+            <span class="bi bi-person">Login</span>
+            <span class="bi bi-cart">Cart</span>
+            <span class="bi bi-shop">Become a seller</span>
+            <span class="bi bi-three-dots-vertical"></span>
+        </div>
+    </header>
+    <section>
+        <article>
+          <marquee loop="10" scrollAmount="10" behavior="alternate"> <span class="bi bi-lightning-fill"></span> Black Friday Sale Upto 50% off on Brand Products <span class="bi bi-lightning-fill"></span></marquee>
+        </article>
+    </section>
+    <footer>
+            <div class="part-1">
+                <div>
+                	<span class="col-name">About</span>
+                	<span>Contact Us</span>
+                	<span>About Us</span>
+                	<span>Careers</span>
+                	<span>FlipKart Stories</span>
+                	<span>Press</span>
+                	<span>Corporate Information</span>
+                </div>
+                <div>
+                	<Span class="col-name">Group Compaines</Span>
+                	<span>Myntra</span>
+                	<span>Cleartrip</span>
+                	<span>Shposy</span>
+                </div>
+                <div>
+                    <span class="col-name">Help</span>
+                    <span>Payments</span>
+                    <span>Shipping</span>
+                    <span>Cancellation &</span>
+                    <span>Returns</span>
+                    <span>FAQ</span>
+                </div>
+                <div>
+                    <span class="col-name">CONSUMER POLICY</span>
+                     <span>Cancellation &</span>
+                    <span>Returns</span>
+                    <span>Terms Of Use</span>
+                    <span>Security</span>
+                    <span>Privacy</span>
+                    <span>Sitemap</span>
+                    <span>Grievance Redressal</span>
+                    <span>EPR Compliance</span>
+                    <span>FSSAI Food Safety</span>
+                    <span>Connect App</span>
+                </div>
+            </div>
+            <div class="part-2">
+                <div>
+                <span class="col-name">Mail Us:</span>
+                <span>Flipkart Internet Private Limited,</span>
+                <span>Buildings Alyssa, Begonia &</span>
+                <span>Clove Embassy Tech Village,</span>
+                <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                <span>Bengaluru, 560103,</span>
+                <span>Karnataka, India</span>
+                </div>
+                <div>
+                    <address>
+                        <span class="col-name">Registered Office Address:</span>
+                        <span>Flipkart Internet Private Limited,</span>
+                        <span>Buildings Alyssa, Begonia &</span>
+                        <span>Clove Embassy Tech Village,</span>
+                        <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                        <span>Bengaluru, 560103,</span>
+                        <span>Karnataka, India</span>
+                        <span>Grievance Redressal</span>
+                        <span>CIN : U51109KA2012PTC066107</span>
+                        <span>Telephone: 044-45614700 / 044-67415800</span>
+                    </address>
+                </div>
+                <div>
+                    <span class="col-name">SOCIAL</span>
+                    <aside class="ico">
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter-x"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-youtube"></span>
+                    </aside>
+                </div>
+            </div>                    
+    </footer>
+</body>
+</html>
