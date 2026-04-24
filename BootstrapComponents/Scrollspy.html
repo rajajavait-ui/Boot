@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="container-fluid">
+    <h1>Scrollspy</h1>
+    <nav class="navbar" id="navbar">
+      <span class="navbar-brand">Scrollspy</span>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#first" class="nav-link active">First</a></li>
+        <li class="nav-item"><a href="#second" class="nav-link">second</a></li>
+        <li class="nav-item">
+          <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Dropdown</a
+          >
+          <ul class="dropdown-menu">
+            <li><a href="#third" class="dropdown-item">Third</a></li>
+            <li><a href="#fourth" class="dropdown-item">fourth</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#Fifth" class="dropdown-item">Fifth</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+<div class="m-2 p-2 w-100"
+     style="height:300px; overflow-y:auto; position:relative;"
+     data-bs-spy="scroll"
+     data-bs-target="#navbar"
+     tabindex="0">
+      <h1 id="first">First</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        mollitia alias dolor nostrum molestiae reiciendis praesentium
+        exercitationem nulla quisquam tenetur tempore, nobis nemo delectus,
+        recusandae qui molestias nesciunt voluptates accusantium? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Culpa est necessitatibus
+        mollitia neque accusamus recusandae eveniet reprehenderit officiis, quae
+        ratione. Dolorum culpa nostrum, esse officiis debitis facilis dolore
+        rerum recusandae.
+      </p>
+        <h1 id="second">second</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        mollitia alias dolor nostrum molestiae reiciendis praesentium
+        exercitationem nulla quisquam tenetur tempore, nobis nemo delectus,
+        recusandae qui molestias nesciunt voluptates accusantium? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Culpa est necessitatibus
+        mollitia neque accusamus recusandae eveniet reprehenderit officiis, quae
+        ratione. Dolorum culpa nostrum, esse officiis debitis facilis dolore
+        rerum recusandae.
+      </p>
+        <h1 id="third">Third</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        mollitia alias dolor nostrum molestiae reiciendis praesentium
+        exercitationem nulla quisquam tenetur tempore, nobis nemo delectus,
+        recusandae qui molestias nesciunt voluptates accusantium? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Culpa est necessitatibus
+        mollitia neque accusamus recusandae eveniet reprehenderit officiis, quae
+        ratione. Dolorum culpa nostrum, esse officiis debitis facilis dolore
+        rerum recusandae.
+      </p>
+        <h1 id="fourth">Fourth</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        mollitia alias dolor nostrum molestiae reiciendis praesentium
+        exercitationem nulla quisquam tenetur tempore, nobis nemo delectus,
+        recusandae qui molestias nesciunt voluptates accusantium? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Culpa est necessitatibus
+        mollitia neque accusamus recusandae eveniet reprehenderit officiis, quae
+        ratione. Dolorum culpa nostrum, esse officiis debitis facilis dolore
+        rerum recusandae.
+      </p>
+        <h1 id="Fifth">Fifth</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        mollitia alias dolor nostrum molestiae reiciendis praesentium
+        exercitationem nulla quisquam tenetur tempore, nobis nemo delectus,
+        recusandae qui molestias nesciunt voluptates accusantium? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Culpa est necessitatibus
+        mollitia neque accusamus recusandae eveniet reprehenderit officiis, quae
+        ratione. Dolorum culpa nostrum, esse officiis debitis facilis dolore
+        rerum recusandae.
+      </p>
+    </div>
+  </body>
+</html>
