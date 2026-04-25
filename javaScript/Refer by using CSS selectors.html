@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyLoad()
+        {
+           document.querySelector("img").src="../public/images/LittleGirl.jpg";
+           document.querySelector("btnLogin").value="Login";
+           document.querySelector(".btnRegister").value="Register";
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="200" height="200" >
+    </div>
+    <div>
+        <form>
+            <h1>Login</h1>
+            <input type="text" placeholder="UserName"> <input type="button" id="btnLogin">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h1>Register</h1>
+            <input type="text" placeholder="UserName"> 
+            <br><br>
+            <input type="text" placeholder="password"> 
+            <br><br><input type="button" class="btnRegister">
+        </form>
+    </div>
+</body>
+</html>

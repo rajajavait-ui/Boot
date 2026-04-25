@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pageLoad()
+        {
+            Poster.src="../public/images/women1.jpg";
+            frm.lgbtn.value="Login";
+            form2.btnRegister.value="Register";
+        }
+    </script>
+</head>
+<body onload="pageLoad()">
+    <div>
+        <img width="200" height="200" name="Poster">
+    </div>
+    <div>
+        <form name="frm">
+             <h1>Login</h1>
+            <input type="text" placeholder="User Name"> <input type="button" name="lgbtn">
+        </form>
+    </div>
+    <div>
+        <form name="form2">
+            <h1>Register</h1>
+            <input type="text" name="" placeholder="UserName"> <br><br>
+            <input type="text" name="" placeholder="Password"><br><br>
+            <input type="button" name="btnRegister">
+        </form>
+    </div>
+</body>
+</html>

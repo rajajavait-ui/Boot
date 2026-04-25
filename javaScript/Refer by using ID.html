@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyLoad()
+        {
+           document.getElementById("poster").src="../public/images/DevOps.jpg"
+           document.getElementById("btnLogin").value="Login/Sign Up"
+           document.getElementById("btnRegister").value="Register"
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img  alt="" width="200" height="200" id="poster">
+    </div>
+    <div>
+        <form>
+            <h1>Login</h1>
+            <input type="text" placeholder="UserName"> <input type="button" id="btnLogin">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h1>Register</h1>
+            <input type="text" placeholder="UserName"> 
+            <br><br>
+            <input type="text" placeholder="password"> 
+            <br><br><input type="button" id="btnRegister">
+        </form>
+    </div>
+</body>
+</html>
