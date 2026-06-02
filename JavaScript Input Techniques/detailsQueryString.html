@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script href="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        dl
+        {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            font-family:Arial, Helvetica, sans-serif ;
+            
+        }
+    </style>
+    <script>
+        function detailsGet()
+        {
+            params = new URLSearchParams(location.search);
+            document.getElementById("product").textContent =params.get("product");
+            document.getElementById("price").textContent =params.get("price");
+            document.getElementById("brand").textContent =params.get("brand");
+        }
+    </script>
+</head>
+<body onload="detailsGet()">
+    <h2>Product Details</h2>
+    <dl>
+        <dt class="p-2">Product</dt>
+        <dd id="product"></dd>
+        <dt class="p-2">Price</dt>
+        <dd id="price"></dd>
+        <dt class="p-2">Brand</dt>
+        <dd id="brand"></dd>
+    </dl>
+    <a href="./queryStringExample1.html">Back</a>
+</body>
+</html>
